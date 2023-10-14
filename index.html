@@ -14,15 +14,31 @@
                     <div class="header__logo">
                         <img src="./image/logo dark.png" alt="">
                     </div>
-                    <div class="header__nav">
-                        <a href="#">Home</a>
-                        <a href="#">Product</a>
-                        <a href="#">About</a>
-                        <a href="#">Contact</a>
-                    </div>
-                    <div class="header__btn-login">
-                        <button class="btn-login">Login</button>
-                    </div>
+                    <div class="hamburger hamburger--boring">
+                        <div class="hamburger-box">
+                          <div class="hamburger-inner"></div>
+                        </div>
+                      </div>
+                      
+                      <div class="burger-wrap">
+                        <div class="burger__content">
+                            <button class="burger__close">x</button>
+    
+                            <h5 class="burger__title">Menu</h5>
+                            <nav class="burger__list">
+                                <a href="#" class="burger__link">Home</a>
+                                <a href="#" class="burger__link">Product</a>
+                                <a href="#" class="burger__link">About</a>
+                                <a href="#" class="burger__link">Contact</a>
+                            </nav>
+                            <div class="btn__login__burger">
+                                <button class="login__btn">Login</button>
+                                <button class="register__btn">Register</button>
+                            </div>
+                            <div class="burger__background">
+                            </div>
+                        </div>
+                      </div>
                 </div>
             </div>
         </header>
@@ -185,8 +201,102 @@
                         </div>
                     </div>
                 </section>
+                <section id="testimonials">
+                    <div class="container">
+                        <div class="testimonials">
+                            <div class="testimonials__title">
+                                <h1>
+                                    Testimonials
+                                </h1>
+                            </div>
+                            <div class="designer__info">
+                            <div class="claire_bell">
+                                <div class="autor__designer">
+                                    <img src="./image/avatar (3).png" width="50px" height="50px">
+                                    <h1>Claire Bell <br>
+                                        Designer
+                                    </h1>
+                                </div>
+                                <div class="autor__designer__info">
+                                    <p>Slate helps you see how many more days <br>
+                                        you need to work to reach your financial <br>
+                                        goal for the month and year. Slate helps <br>
+                                        you see how many more days <br>
+                                        you need to work to reach your financial <br> 
+                                        goal for the month and year.your financial <br>
+                                        goal for the month and year.</p>
+                                </div>
+                            </div>
+                            <div class="claire_bell">
+                                <div class="autor__designer">
+                                    <img src="./image/avatar (4).png" width="50px" height="50px">
+                                    <h1>Francisco Lane <br>
+                                        Designer
+                                    </h1>
+                                </div>
+                                <div class="autor__designer__info">
+                                    <p>Slate helps you see how many more days <br>
+                                        you need to work to reach your financial <br>
+                                        goal for the month and year. Slate helps <br>
+                                        you see how many more days <br>
+                                        you need to work to reach your financial <br> 
+                                        goal for the month and year.</p>
+                                </div>
+                            </div>
+                            <div class="claire_bell">
+                                <div class="autor__designer">
+                                    <img src="./image/avatar (5).png" width="50px" height="50px">
+                                    <h1>Ralph Fisher <br>
+                                        Designer
+                                    </h1>
+                                </div>
+                                <div class="autor__designer__info">
+                                    <p>Slate helps you see how many more days <br>
+                                        you need to work to reach your financial <br>
+                                        goal for the month and year. Slate helps <br>
+                                        you see how many more days <br>
+                                        you need to work to reach your financial <br> 
+                                        goal for the month and year.</p>
+                                </div>
+                            </div>
+                            <div class="claire_bell">
+                                <div class="autor__designer">
+                                    <img src="./image/avatar (6).png" width="50px" height="50px">
+                                    <h1>Jorge Murphy <br>
+                                        Designer
+                                    </h1>
+                                </div>
+                                <div class="autor__designer__info">
+                                    <p>Slate helps you see how many more days <br>
+                                        you need to work to reach your financial <br>
+                                        goal for the month and year. Slate helps <br>
+                                        you see how many more days <br>
+                                        you need to work to reach your financial <br> 
+                                        goal for the month and year.</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </section>
     </div>
+    <script>
+        const burgerOpen = document.querySelector('.hamburger')
+        const burgerClose = document.querySelector('.burger__close')
+    
+        const burgerWrap = document.querySelector('.burger-wrap')
+    
+        burgerOpen.addEventListener('click', function(){
+            burgerOpen.classList.add('is-active')
+            burgerWrap.classList.add('active')
+        } )
+    
+        burgerClose.addEventListener('click', function(){
+            burgerOpen.classList.remove('is-active')
+            burgerWrap.classList.remove('active')
+        } )
+    </script>
 </body>
 </html>
