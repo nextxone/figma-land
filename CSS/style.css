@@ -549,7 +549,116 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }
+    } 
+}
+
+/* SECTION-CONTENTS */
+/* SECTION-GALLERY */
+
+.gallery__title h1 {
+    color: var(--light-text, #FFF);
+
+    /* Second Headline */
+    font-family: Graphik;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 62px; /* 119.231% */
+    letter-spacing: 0.2px;
+    text-align: center;
+    margin-top: 250px;
+}
+
+.gallery__p p {
+    color: var(--light-text, #FFF);
+    text-align: center;
     
-    .con
+    /* Sub Heading */
+    font-family: Graphik;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+    letter-spacing: 0.2px;
+    margin-top: 20px;
+}
+
+.gallery__img__collage img {
+    /* width: 225px;
+    height: 285px; */
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    border-radius: 10px;
+}
+
+.gallery__img__collage {
+    display: flex;
+    justify-content: center;
+    gap: 20px   ;
+}
+
+.laptop {
+    border-radius: 10px;
+    width: 395px;
+    height: 285px;
+}
+
+.laptop-mini {
+    width: 225px;
+    height: 285px;
+    border-radius: 10px;
+}
+
+.gallery__img__electronic img {
+    border-radius: 10px;
+}
+
+.gallery__img__electronic {
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.gallery__btn__info {
+    border: 1px solid var(--light-text, #FFF);
+    box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15);
+    display: flex;
+    height: 52px;
+    padding: 10px 30px;
+    align-items: center;
+    background: var(--dark-background, #181818);
+    color: var(--light-text, #FFF);
+
+    /* Button */
+    font-family: Graphik;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px; /* 147.059% */
+    letter-spacing: 0.2px;
+    cursor: pointer;
+}
+
+.gallery__btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+@media screen and ( max-width: 640px) {
+    .gallery__img__electronic {
+        display: none;
+    }
+
+    .gallery__img__collage {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gallery__img__collage img {
+        width: 329px;
+        height: 285px;
+        margin-left: 100px;
+        margin-top: 30px;
+    }
 }
